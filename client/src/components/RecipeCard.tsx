@@ -75,7 +75,7 @@ export function RecipeCard({ recipe, liked }: RecipeCardProps) {
   });
 
   const handleHeartClick = async (e: React.MouseEvent) => {
-    e.stopPropagation(); // ✅ prevent card click from firing
+    e.stopPropagation();
 
     if (!user) {
       toast.info("Please login to favorite recipes", {
