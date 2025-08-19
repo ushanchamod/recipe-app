@@ -78,7 +78,10 @@ export function RecipeCard({ recipe, liked }: RecipeCardProps) {
     e.stopPropagation(); // ✅ prevent card click from firing
 
     if (!user) {
-      toast.info("Please login to favorite recipes", { autoClose: 2000 });
+      toast.info("Please login to favorite recipes", {
+        autoClose: 2000,
+        position: "bottom-right",
+      });
       return;
     }
 

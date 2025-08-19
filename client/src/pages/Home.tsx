@@ -146,8 +146,8 @@ export default function RecipeApp() {
                       layout
                       initial={{ opacity: 0, scale: 0.95 }}
                       animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.95 }}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
+                      exit={{ opacity: 0, scale: 0.91 }}
+                      transition={{ duration: 0.2, ease: "easeOut" }}
                     >
                       <RecipeCard recipe={recipe} liked={recipe.liked} />
                     </motion.div>

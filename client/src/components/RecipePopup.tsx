@@ -7,7 +7,6 @@ const RecipePopup = () => {
 
   if (!recipe) return null;
 
-  // Collect ingredients + measures into a clean array
   const ingredients: string[] = [];
   for (let i = 1; i <= 20; i++) {
     const ingredient =
@@ -24,7 +23,7 @@ const RecipePopup = () => {
       setAddNewPopup={setRecipe}
       loading={false}
     >
-      <div className="flex flex-col gap-6 w-full p-6 sm:p-8 bg-gray-50/90 backdrop-blur-md rounded-2xl shadow-lg">
+      <div className="flex flex-col gap-6 w-full p-6 sm:p-8 bg-white rounded-2xl shadow-lg">
         {/* Thumbnail */}
         {recipe.all.strMealThumb && (
           <div className="relative w-full overflow-hidden rounded-2xl shadow-sm group">

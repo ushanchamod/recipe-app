@@ -19,8 +19,8 @@ export function RecipeSidebar({
           onClick={() => onCategoryChange("")}
           className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-200 font-medium ${
             activeCategory === ""
-              ? "bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-md"
-              : "text-gray-700 hover:bg-white/50 hover:shadow-sm"
+              ? "bg-gray-800 text-white shadow-md"
+              : "text-gray-700 hover:bg-gray-200 hover:text-gray-900"
           }`}
         >
           All
@@ -32,8 +32,8 @@ export function RecipeSidebar({
             onClick={() => onCategoryChange(category.strCategory)}
             className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-200 font-medium ${
               activeCategory === category.strCategory
-                ? "bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-md"
-                : "text-gray-700 hover:bg-white/50 hover:shadow-sm"
+                ? "bg-gray-800 text-white shadow-md"
+                : "text-gray-700 hover:bg-gray-200 hover:text-gray-900"
             }`}
           >
             {category.strCategory}
